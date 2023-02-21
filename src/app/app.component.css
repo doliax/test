@@ -1,0 +1,21 @@
+body{
+   /* background-color: brown;*/
+}
+
+h1{
+   text-align: center;
+}
+
+.iter_array{
+    /*color: brown;*/
+}
+
+.header{
+   background-color:wheat;
+   width: 7%;
+}
+
+.h1_first{
+   background-image:url("../assets/header.jpg");
+   height: auto;
+}
