@@ -3,4 +3,17 @@
     border-color: brown;
     display:inline-block;
     margin: 50px;    
+    text-align: center;
+    align-items: center;
+    align-content: center;
+}
+
+.foto_class{
+    height: 100px;
+    vertical-align:middle
+}
+
+.nombre_class{
+    text-align: center;
+    color: brown;
 }
