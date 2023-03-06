@@ -4,6 +4,4 @@ export class Articles {
     nombre!: string;
     precio!: number;
     foto!: string;
-
-    
 }
