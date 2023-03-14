@@ -10,4 +10,6 @@ h1, h2{
 .h1_first{
    /*background-image:url("../assets/header.jpg");*/
    height: auto;
+   text-align: left;
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }

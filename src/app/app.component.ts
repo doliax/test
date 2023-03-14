@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import axios from 'axios';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -20,4 +21,14 @@ export class AppComponent {
       console.log(this.palabras);
     }
    }
+}
+getUser();
+//Install Axios library for use http calls
+async function getUser() {
+  try {
+    const response = await axios.get('https://jsonplaceholder.typicode.com/todos/1');
+    console.log(response);
+  } catch (error) {
+    console.error(error);
+  }
 }
