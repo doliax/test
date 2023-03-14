@@ -22,11 +22,6 @@ h1, h2{
     /*color: brown;*/
 }
 
-.header{
-   background-color:wheat;
-   width: 7%;
-}
-
 .h1_first{
    background-image:url("../assets/header.jpg");
    height: auto;
