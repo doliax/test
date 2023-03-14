@@ -23,6 +23,6 @@ h1, h2{
 }
 
 .h1_first{
-   background-image:url("../assets/header.jpg");
+   /*background-image:url("../assets/header.jpg");*/
    height: auto;
 }
