@@ -7,7 +7,7 @@ import { Articles } from '../class/articles';
 })
 export class CardsComponent implements OnInit {
 
-  
+  number_puls: number = 0;  
 
   public articulo: Articles = new Articles();
    articulo2: Articles = new Articles();
@@ -43,6 +43,9 @@ export class CardsComponent implements OnInit {
     
   }
 
+  addPuls(){
+    this.number_puls++;
+  }
 
   ngOnInit(): void {}
 

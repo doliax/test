@@ -14,7 +14,11 @@
     vertical-align:middle
 }
 
+.cards:hover{
+    transform: rotate(35deg);
+}
+
 .nombre_class{
     text-align: center;
-    color: brown;
+    color: blue;
 }

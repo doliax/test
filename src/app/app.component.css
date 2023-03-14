@@ -1,18 +1,3 @@
-/*Esto hace que cubra todo (menos los lados)*/
-html, body {
-   min-height: 100vh;
-   height: auto;
-   margin: 0;
- }
-
-body{
-   background-image:url("../assets/background.png");
-   background-size: cover;
-   background-position: center;
-   background-attachment: fixed;
-   width: 100%;
-   height: 100%;
-}
 
 h1, h2{
    text-align: center;
