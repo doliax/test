@@ -6,8 +6,12 @@
 <body>
     <h1 class="h1_first">Elementos y Alimentos</h1>
 
+    <header class="header">
+        <span>¿Quienes somos?</span>
+        <span (click)="toogle()">Articulos</span>
+    </header>
    <!-- <hr/>-->
-    <div class="todo_apartado">
+    <div *ngIf="show_all" class="todo_apartado">
         <h2>Apartado Todo</h2>
         <!--Use the array palabras for iterate each value and print it like x-->
         <span class="iter_array" *ngFor="let x of palabras">
@@ -18,7 +22,7 @@
         <input [(ngModel)]="nuevo" type="text">
         <button (click)="addTodo(nuevo)">Añadir tarea</button>
     </div>
-    <div class="card_apartado">
+    <div *ngIf="!show_all" class="card_apartado">
         <h2>Articulos</h2>
         <app-cards></app-cards>
     </div>

@@ -7,6 +7,7 @@ import axios from 'axios';
 })
 export class AppComponent {
   title = 'test';
+  show_all = true;
 
    palabras: string[] = ["Tarea1","Tarea2"];
    nuevo: string = "";
@@ -20,6 +21,10 @@ export class AppComponent {
       this.nuevo = "";
       console.log(this.palabras);
     }
+   }
+
+   toogle(){
+    this.show_all = !this.show_all;
    }
 }
 getUser();
