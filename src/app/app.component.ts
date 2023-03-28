@@ -11,7 +11,6 @@ export class AppComponent {
   show_faq = true;
    palabras: string[] = ["Tarea1","Tarea2"];
    nuevo: string = "";
-
    addTodo(todos: string) {
     console.log(todos)
     if(!todos){

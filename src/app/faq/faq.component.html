@@ -1,1 +1,7 @@
-<h2>Elemento y Alimentos es una de las mayores empresas alimenticias del mercado</h2>
+<span>Elemento y Alimentos es una de las mayores empresas alimenticias del mercado. </span>
+<br>
+<span> Con mas de 40 años en el sector se ha convertido en todo un referente.</span>
+
+<div onchange="changeRotative()" *ngFor="let img of array_images; let i = index;" [hidden]="currentIndex !== i">
+    <img [src]="img">
+</div>

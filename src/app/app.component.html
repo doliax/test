@@ -4,12 +4,13 @@
 </head>
 
 <body>
-    <h1 class="h1_first">Elementos y Alimentos</h1>
-
-    <header class="header">
-        <span (click)="toogleFaq()">¿Quienes somos?  </span> |
-        <span (click)="toogle()"> Articulos</span>
-    </header>
+    <div class="cabecera">
+        <h1 class="h1_first">Elementos y Alimentos</h1>
+        <header class="header">
+            <span (click)="toogleFaq()">¿Quienes somos?  </span> |
+            <span (click)="toogle()"> Articulos</span>
+        </header>
+    </div>
    <!-- <hr/>-->
     <div *ngIf="show_all && show_faq" class="todo_apartado">
         <h2>Apartado Todo</h2>
