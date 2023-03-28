@@ -8,7 +8,7 @@ import axios from 'axios';
 export class AppComponent {
   title = 'test';
   show_all = true;
-
+  show_faq = true;
    palabras: string[] = ["Tarea1","Tarea2"];
    nuevo: string = "";
 
@@ -25,6 +25,10 @@ export class AppComponent {
 
    toogle(){
     this.show_all = !this.show_all;
+   }
+
+   toogleFaq(){
+    this.show_faq = !this.show_faq;
    }
 }
 getUser();
