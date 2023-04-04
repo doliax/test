@@ -1,5 +1,5 @@
 
-<span>Carrito de la compra {{number_puls}} elementos</span>
+
 <div class="cards" *ngFor="let x of array_articulos">
         <span class="nombre_class">Nombre: {{x.nombre}}</span>
         <br>
@@ -7,3 +7,4 @@
         <br>
         <img  (click)="addPuls()" class="foto_class" src="{{x.foto}}" alt="">
 </div>
+<span>Carrito de la compra {{number_puls}} elementos</span>
