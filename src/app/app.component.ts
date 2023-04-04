@@ -18,15 +18,24 @@ export class AppComponent {
     }else{
       setTimeout(()=>{
         //Aquí que cambie de color y sonido
-        //2 Esto lo hace pero debido al styles.css quizas no lo aplique visualmente?
        let el = document.getElementById("general");
        if(el){
-        el.style.backgroundColor = 'grey';
+        el.style.backgroundColor = 'green';
        }
        else{
         console.log('El elemento no existe')
        }
-       
+
+       //Para volvr a su color original
+       setTimeout(() => {
+        if (el) {
+          el.style.backgroundColor = '';
+        } else {
+          console.log('El elemento no existe');
+        }
+      }, 1000);
+
+
       }, 300);
       
       this.palabras.push(todos);

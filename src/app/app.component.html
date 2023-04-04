@@ -18,9 +18,9 @@
         <span class="iter_array" *ngFor="let x of palabras">
             {{x}}
         </span>
-        <p>Escribe una tarea</p>
+        <br>
         <!--With this ngmodel, we capture the new value of nuevo and can send it at the function-->
-        <input [(ngModel)]="nuevo" type="text">
+        <input placeholder="Escribe una tarea" [(ngModel)]="nuevo" type="text">
         <button (click)="addTodo(nuevo)">Añadir tarea</button>
     </div>
     <!--We check if variable is false to display it-->
