@@ -16,6 +16,19 @@ export class AppComponent {
     if(!todos){
       alert("El texto esta vacio, escribe uno nuevo")
     }else{
+      setTimeout(()=>{
+        //Aquí que cambie de color y sonido
+        //2 Esto lo hace pero debido al styles.css quizas no lo aplique visualmente?
+       let el = document.getElementById("general");
+       if(el){
+        el.style.backgroundColor = 'grey';
+       }
+       else{
+        console.log('El elemento no existe')
+       }
+       
+      }, 300);
+      
       this.palabras.push(todos);
       this.nuevo = "";
       console.log(this.palabras);
