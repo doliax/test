@@ -18,7 +18,7 @@ export class AppComponent {
     }else{
       setTimeout(()=>{
         //Aquí que cambie de color y sonido
-       let el = document.getElementById("general");
+       const el = document.getElementById("general");
        if(el){
         el.style.backgroundColor = 'green';
        }
