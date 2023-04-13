@@ -9,6 +9,7 @@ export class AppComponent {
   title = 'test';
   show_all = true;
   show_faq = true;
+  show_contacto = true;
    palabras: string[] = ["Tarea1","Tarea2"];
    nuevo: string = "";
    addTodo(todos: string) {
@@ -35,7 +36,7 @@ export class AppComponent {
         }
       }, 1000);
 
-
+      
       }, 300);
       
       this.palabras.push(todos);
@@ -51,6 +52,10 @@ export class AppComponent {
    toogleFaq(){
     this.show_faq = !this.show_faq;
    }
+
+   toogleContacto(){
+    this.show_contacto = !this.show_contacto;
+  }
 }
 getUser();
 //Install Axios library for use http calls
