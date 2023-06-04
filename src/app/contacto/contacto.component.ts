@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataForm } from '../class/data_form';
 
 @Component({
   selector: 'app-contacto',
@@ -6,10 +7,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./contacto.component.css']
 })
 export class ContactoComponent implements OnInit {
-
-  constructor() { }
+   data_formulario = new DataForm();
+  constructor() {
+   
+   }
 
   ngOnInit(): void {
+  }
+
+  checkData(){
+    
   }
 
 }
