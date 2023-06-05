@@ -29,3 +29,27 @@ h1, h2{
 .header>span:hover{
    color: brown;
 }
+
+.apartado_2{
+   size: 20px;
+   text-align: center;
+   /*El margin y el display block alinea el div y sus elementos al centro haciendo que este no ocupe todo el ancho*/
+   margin: 0 auto;
+   display: block;
+   margin-left: auto;
+   padding: 50px;
+}
+
+.apartado_2>h3{
+   margin: 0 auto;
+}
+
+.apartado_2>img{
+  display: flex;
+  margin: 0 auto;
+   height: 150px;
+}
+
+#apart2{
+   background-color: bisque;
+}
