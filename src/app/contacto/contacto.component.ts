@@ -14,4 +14,9 @@ export class ContactoComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+  //This function get the form reference in html and reset his values
+  onSubmit(form: any){
+    form.reset();
+  }
 }

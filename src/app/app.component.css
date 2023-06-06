@@ -3,9 +3,6 @@ h1, h2{
    text-align: center;
 }
 
-.iter_array{
-    /*color: brown;*/
-}
 
 .h1_first{
    height: auto;
@@ -53,3 +50,14 @@ h1, h2{
 #apart2{
    background-color: bisque;
 }
+
+footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #f8f8f8;
+   text-align: center;
+   padding: 20px 0;
+ }
+ 

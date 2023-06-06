@@ -14,9 +14,3 @@ body{
 app-root {
    min-height: calc(100% - 200%);
  }
-
-
-footer{
-   background-color: black;
-   color: white;
-}
