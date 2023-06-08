@@ -1,11 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-
 @Component({
   selector: 'app-elemento-add',
   templateUrl: './elemento-add.component.html',
   styleUrls: ['./elemento-add.component.css']
 })
+
+
 export class ElementoAddComponent implements OnInit {
+
 
   constructor() { }
 

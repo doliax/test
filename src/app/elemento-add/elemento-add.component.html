@@ -1,8 +1,12 @@
 <div class="todo_apartado">
     <!--Use the array palabras for iterate each value and print it like x-->
-    <span class="iter_array" *ngFor="let x of palabras">
+    <!--<span class="iter_array" *ngFor="let x of palabras">
         {{x}}
-    </span>
+    </span>-->
+    <div  *ngFor="let x of palabras">
+        <!--decimos que dentro del componente hijo cada elemento del array es una variable-->
+        <app-elemento-mostrar [datos]="x"></app-elemento-mostrar>
+    </div>
     <br>
     <!--With this ngmodel, we capture the new value of nuevo and can send it at the function-->
     <input placeholder="Escribe una tarea" [(ngModel)]="nuevo" type="text">

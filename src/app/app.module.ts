@@ -7,6 +7,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { FaqComponent } from './faq/faq.component';
 import { ContactoComponent } from './contacto/contacto.component';
 import { ElementoAddComponent } from './elemento-add/elemento-add.component';
+import { ElementoMostrarComponent } from './elemento-mostrar/elemento-mostrar.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { ElementoAddComponent } from './elemento-add/elemento-add.component';
     CardsComponent,
     FaqComponent,
     ContactoComponent,
-    ElementoAddComponent
+    ElementoAddComponent,
+    ElementoMostrarComponent
   ],
   imports: [
     BrowserModule,
