@@ -6,13 +6,15 @@ import { CardsComponent } from './cards/cards.component';
 import { AppRoutingModule } from './app-routing.module';
 import { FaqComponent } from './faq/faq.component';
 import { ContactoComponent } from './contacto/contacto.component';
+import { ElementoAddComponent } from './elemento-add/elemento-add.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CardsComponent,
     FaqComponent,
-    ContactoComponent
+    ContactoComponent,
+    ElementoAddComponent
   ],
   imports: [
     BrowserModule,

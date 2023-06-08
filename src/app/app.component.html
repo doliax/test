@@ -7,23 +7,14 @@
     <div class="cabecera">
         <h1 class="h1_first">Elementos y Alimentos</h1>
         <header class="header">
-            <span (click)="toogleFaq()">¿Quienes somos?  </span> |
-            <span (click)="toogle()"> Articulos</span> |
-            <span (click)="toogleContacto()"> Contacto</span>
+            <button class="menu_buttons" (click)="toogleFaq()">¿Quienes somos?  </button> 
+            <button class="menu_buttons" (click)="toogle()"> Articulos</button> 
+            <button class="menu_buttons" (click)="toogleContacto()"> Contacto</button>
+            <button class="menu_buttons" (click)="toogleElemento()">Añadir Elemento</button>
         </header>
     </div>
    <!-- <hr/>-->
-    <div *ngIf="show_all && show_faq && show_contacto" class="todo_apartado">
-        <h2>Apartado Todo</h2>
-        <!--Use the array palabras for iterate each value and print it like x-->
-        <span class="iter_array" *ngFor="let x of palabras">
-            {{x}}
-        </span>
-        <br>
-        <!--With this ngmodel, we capture the new value of nuevo and can send it at the function-->
-        <input placeholder="Escribe una tarea" [(ngModel)]="nuevo" type="text">
-        <button (click)="addTodo(nuevo)">Añadir tarea</button>
-    </div>
+   
     <!--We check if variable is false to display it-->
     <div *ngIf="!show_all" class="card_apartado">
         <h2>Articulos</h2>
@@ -37,6 +28,10 @@
         <h2>Contacto</h2>
         <app-contacto></app-contacto>
     </div>
+    <div *ngIf="!show_elemento" class="card_apartado">
+        <h2>Añadir Elemento</h2>
+        <app-elemento-add></app-elemento-add>
+    </div>
         <div class="apartado_2">
             <h3>Nuestros Productos</h3>
             <span>Recibe nuestros productos de maxima calidad y frescura</span>
@@ -45,7 +40,17 @@
         <div id="apart2" class="apartado_2">
             <h3>Nuestras Tiendas Fisicas</h3>
             <span>Con más de 500 tiendas repartidas por más de 40 paises</span>
-            <img src="/assets/tienda.jpg"/>
+            <div>
+                <img class="img_apart2" src="/assets/tienda.jpg"/>
+                <img class="img_apart2" src="/assets/tienda_2.png">
+            </div>
         </div>
+        <section class="medio_ambiente">
+            <div>
+                <h3>Medio Ambiente</h3>
+                Nuestros transportistas y proveedores están sumamente comprometidos con el medio ambiente,
+                por ello solo utilizan vehiculos electricos.
+            </div>
+        </section>
         <footer>Web hecha por Ramón Moncholí Ros</footer>
 </body>

@@ -18,9 +18,10 @@ h1, h2{
    /* Center */
    margin: 0 auto;
    /* Espacio alrededor */
-   padding: 20px; 
+   padding: 10px; 
    background-color: burlywood;
    /*width: 20%;*/
+   display: flex;
 }
 
 .header>span:hover{
@@ -60,4 +61,41 @@ footer {
    text-align: center;
    padding: 20px 0;
  }
- 
+
+ .menu_buttons{
+   border: none;
+   background-color: burlywood;
+ }
+
+
+ .menu_buttons:hover{
+    animation: color-sweep 1s linear infinite;  /* Animacion con un keyframe llamado color-sweep de 1s en linea e infinito */
+ }
+
+ @keyframes color-sweep {
+  0% {
+    background-color: #ccc; /* Color inicial */
+  }
+  50% {
+    background-color: orange; /* Color mitad animación */
+  }
+  100% {
+    background-color: orangered; /* Color final */
+  }
+}
+
+
+.img_apart2{
+   height: 300px;
+}
+
+.medio_ambiente{
+     size: 20px;
+   text-align: center;
+   /*El margin y el display block alinea el div y sus elementos al centro haciendo que este no ocupe todo el ancho*/
+   margin: 0 auto;
+   display: block;
+   margin-left: auto;
+   padding: 50px;
+   background-color:steelblue;
+}

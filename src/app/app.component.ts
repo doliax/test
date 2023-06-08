@@ -10,40 +10,8 @@ export class AppComponent {
   show_all = true;
   show_faq = true;
   show_contacto = true;
-   palabras: string[] = ["Tarea1","Tarea2"];
-   nuevo: string = "";
-   addTodo(todos: string) {
-    console.log(todos)
-    if(!todos){
-      alert("El texto esta vacio, escribe uno nuevo")
-    }else{
-      setTimeout(()=>{
-        //Aquí que cambie de color y sonido
-       const el = document.getElementById("general");
-       if(el){
-        el.style.backgroundColor = 'green';
-       }
-       else{
-        console.log('El elemento no existe')
-       }
-
-       //Para volvr a su color original
-       setTimeout(() => {
-        if (el) {
-          el.style.backgroundColor = '';
-        } else {
-          console.log('El elemento no existe');
-        }
-      }, 1000);
-
-      
-      }, 300);
-      
-      this.palabras.push(todos);
-      this.nuevo = "";
-      console.log(this.palabras);
-    }
-   }
+  show_elemento = true;
+   
 
    toogle(){
     this.show_all = !this.show_all;
@@ -55,6 +23,9 @@ export class AppComponent {
 
    toogleContacto(){
     this.show_contacto = !this.show_contacto;
+  }
+  toogleElemento(){
+    this.show_elemento = !this.show_elemento;
   }
 }
 getUser();

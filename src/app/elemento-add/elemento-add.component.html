@@ -1,0 +1,10 @@
+<div class="todo_apartado">
+    <!--Use the array palabras for iterate each value and print it like x-->
+    <span class="iter_array" *ngFor="let x of palabras">
+        {{x}}
+    </span>
+    <br>
+    <!--With this ngmodel, we capture the new value of nuevo and can send it at the function-->
+    <input placeholder="Escribe una tarea" [(ngModel)]="nuevo" type="text">
+    <button (click)="addTodo(nuevo)">Añadir tarea</button>
+</div>
