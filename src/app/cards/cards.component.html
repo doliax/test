@@ -5,8 +5,9 @@
           <br>
           <span class="precio-class">Precio: {{ x.precio }}€</span>
           <br>
-          <img (click)="addPuls()" class="foto-class" src="{{ x.foto }}" alt="">
+          <img (click)="addPuls()" (click)="acumularPrecio(x.precio)" class="foto-class" src="{{ x.foto }}" alt="">
         </div>
       </div>
       
-<span class="contador">Carrito de la compra {{number_puls}} elementos</span>
+<span class="contador"> <i class="fas fa-shopping-cart"></i>{{number_puls}} elementos | Precio: {{precio}}</span>
+

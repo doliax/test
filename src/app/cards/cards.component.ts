@@ -8,7 +8,7 @@ import { Articles } from '../class/articles';
 export class CardsComponent implements OnInit {
 
   number_puls: number = 0;  
-
+  precio: number = 0;
   public articulo: Articles = new Articles();
    articulo2: Articles = new Articles();
    articulo3: Articles = new Articles();
@@ -45,6 +45,11 @@ export class CardsComponent implements OnInit {
 
   addPuls(){
     this.number_puls++;
+  }
+
+  //Esta función acumula el precio de cada artiuclo, se lo asignamos a la imagen
+  acumularPrecio(precio_final: number) {
+    this.precio += precio_final;
   }
 
   ngOnInit(): void {}
