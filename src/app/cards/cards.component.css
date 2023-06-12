@@ -1,20 +1,31 @@
-.cards{
-    display: flex;
+.cards-container {
+  display: flex;
   justify-content: center;
-  align-items: center;
 }
 
-
-.foto_class{
-    height: 100px;
-    vertical-align:middle
+/*En el div principal del card le metemos borde, margen y separación*/
+.cards {
+  border: 2px solid black;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
 }
 
-.cards:hover{
-    transform: rotate(35deg);
+.nombre-class {
+  font-weight: bold;
 }
 
-.nombre_class{
-    text-align: center;
-    color: blue;
+.precio-class {
+  color: blue;
+}
+
+.foto-class {
+  width: 200px;
+  height: 200px;
+  cursor: pointer;
+}
+
+.contador{
+  display: flex;
+  justify-content: center;
 }

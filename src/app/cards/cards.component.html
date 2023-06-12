@@ -1,10 +1,12 @@
 
-
-<div class="cards" *ngFor="let x of array_articulos">
-        <span class="nombre_class">Nombre: {{x.nombre}}</span>
-        <br>
-        <span class="precio_class">Precio: {{x.precio}}€</span>
-        <br>
-        <img  (click)="addPuls()" class="foto_class" src="{{x.foto}}" alt="">
-</div>
-<span>Carrito de la compra {{number_puls}} elementos</span>
+<div class="cards-container">
+        <div class="cards" *ngFor="let x of array_articulos">
+          <span class="nombre-class">Nombre: {{ x.nombre }}</span>
+          <br>
+          <span class="precio-class">Precio: {{ x.precio }}€</span>
+          <br>
+          <img (click)="addPuls()" class="foto-class" src="{{ x.foto }}" alt="">
+        </div>
+      </div>
+      
+<span class="contador">Carrito de la compra {{number_puls}} elementos</span>
