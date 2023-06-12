@@ -7,6 +7,8 @@ import axios from 'axios';
 })
 export class AppComponent {
   title = 'test';
+
+  /* USE ROUTERLINK
   show_all = true;
   show_faq = true;
   show_contacto = true;
@@ -26,7 +28,7 @@ export class AppComponent {
   }
   toogleElemento(){
     this.show_elemento = !this.show_elemento;
-  }
+  } */
 }
 getUser();
 //Install Axios library for use http calls

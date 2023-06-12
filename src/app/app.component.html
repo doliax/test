@@ -7,16 +7,19 @@
     <div class="cabecera">
         <h1 class="h1_first">Elementos y Alimentos</h1>
         <header class="header">
-            <button class="menu_buttons" (click)="toogleFaq()">¿Quienes somos?  </button> 
-            <button class="menu_buttons" (click)="toogle()"> Articulos</button> 
-            <button class="menu_buttons" (click)="toogleContacto()"> Contacto</button>
-            <button class="menu_buttons" (click)="toogleElemento()">Añadir Elemento</button>
+            <button class="menu_buttons" routerLink="/">Inicio  </button> 
+            <button class="menu_buttons" routerLink="/faq">¿Quienes somos?  </button> 
+            <button class="menu_buttons" routerLink="/articulos"> Articulos</button> 
+            <button class="menu_buttons" routerLink="/contacto"> Contacto</button>
+            <button class="menu_buttons" routerLink="/anyadir">Añadir Elemento</button>
+            <!--<button routerLink="/faq" target="_blank">Añadir Elemento 2</button>-->
         </header>
     </div>
    <!-- <hr/>-->
    
     <!--We check if variable is false to display it-->
-    <div *ngIf="!show_all" class="card_apartado">
+    <!--USE ROUTER LINK-->
+    <!--<div *ngIf="!show_all" class="card_apartado">
         <h2>Articulos</h2>
         <app-cards></app-cards>
     </div>
@@ -31,7 +34,8 @@
     <div *ngIf="!show_elemento" class="card_apartado">
         <h2>Añadir Elemento</h2>
         <app-elemento-add></app-elemento-add>
-    </div>
+    </div>-->
+    <router-outlet/>
         <div class="apartado_2">
             <h3>Nuestros Productos</h3>
             <span>Recibe nuestros productos de maxima calidad y frescura</span>
@@ -53,4 +57,5 @@
             </div>
         </section>
         <footer>Web hecha por Ramón Moncholí Ros</footer>
+        
 </body>

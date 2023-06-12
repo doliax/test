@@ -69,6 +69,7 @@ footer {
 
 
  .menu_buttons:hover{
+    /*border-bottom: #ccc solid 2px;*/
     animation: color-sweep 1s linear infinite;  /* Animacion con un keyframe llamado color-sweep de 1s en linea e infinito */
  }
 

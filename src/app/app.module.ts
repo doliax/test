@@ -21,7 +21,7 @@ import { ElementoMostrarComponent } from './elemento-mostrar/elemento-mostrar.co
   imports: [
     BrowserModule,
     FormsModule,
-    AppRoutingModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
