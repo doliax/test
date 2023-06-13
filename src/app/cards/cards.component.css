@@ -5,7 +5,7 @@
 
 /*En el div principal del card le metemos borde, margen y separación*/
 .cards {
-  border: 2px solid black;
+  /*border: 2px solid black;*/
   padding: 10px;
   margin: 10px;
   text-align: center;
@@ -28,4 +28,10 @@
 .contador{
   display: flex;
   justify-content: center;
+  padding-top: 35px;
+}
+
+.addCart{
+  background-color: black;
+  color: white;
 }
