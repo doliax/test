@@ -6,8 +6,8 @@
 
     <br>
     <!--With this ngmodel, we capture the new value of nuevo and can send it at the function-->
-    <input placeholder="Escribe una opinion" [(ngModel)]="nuevo" type="text">
-    <button (click)="addTodo(nuevo)">Añadir opinion</button>
+    <input placeholder="Escribe una opinión" [(ngModel)]="nuevo" type="text">
+    <button (click)="addTodo(nuevo)">Añadir Opinión</button>
     <div  *ngFor="let x of palabras">
         <!--decimos que dentro del componente hijo cada elemento del array es una variable-->
         <app-elemento-mostrar class="elemento_mostrar" [datos]="x"></app-elemento-mostrar>
