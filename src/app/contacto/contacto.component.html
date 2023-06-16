@@ -1,6 +1,6 @@
 <form #form1="ngForm" class="form" action="submit" method="post">
     <div class="form-group">
-        <label for="email">Email:</label>
+        <label for="email">Email: *</label>
         <input type="email" [(ngModel)]="data_formulario.email" name="email" id="email" required><br>
 
 
@@ -11,7 +11,7 @@
         <input *ngIf="data_formulario.empresa" type="text" [(ngModel)]="data_formulario.nombre_empresa" name="nombre_empresa" id="nombre_empresa"><br>
 
 
-        <label for="tlf">Telefono:</label>
+        <label for="tlf">Telefono: *</label>
         <input type="tel" [(ngModel)]="data_formulario.tlf" name="tlf" id="tlf" required><br>
 
         <input type="submit" [disabled]="!data_formulario.email" (click)="onSubmit(form1)">

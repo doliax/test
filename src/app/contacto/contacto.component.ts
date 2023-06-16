@@ -18,5 +18,6 @@ export class ContactoComponent implements OnInit {
   //This function get the form reference in html and reset his values
   onSubmit(form: any){
     form.reset();
+    alert('Datos enviados correctamente');
   }
 }
