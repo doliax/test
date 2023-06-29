@@ -11,5 +11,9 @@
         </div>
       </div>
       
-<span class="contador"> <i class="fas fa-shopping-cart"></i>{{number_puls}} elementos | Precio: {{precio}}</span>
+<span class="contador"> <i class="fas fa-shopping-cart"></i>{{number_puls}} elementos | Precio: {{precio}}</span> 
+
+<div class="cards-container" *ngIf="number_puls">
+    <button routerLink="/compra">Comprar</button>
+</div>
 

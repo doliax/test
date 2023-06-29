@@ -8,6 +8,7 @@ import { FaqComponent } from './faq/faq.component';
 import { ContactoComponent } from './contacto/contacto.component';
 import { ElementoAddComponent } from './elemento-add/elemento-add.component';
 import { ElementoMostrarComponent } from './elemento-mostrar/elemento-mostrar.component';
+import { ComprarComponent } from './comprar/comprar.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ElementoMostrarComponent } from './elemento-mostrar/elemento-mostrar.co
     FaqComponent,
     ContactoComponent,
     ElementoAddComponent,
-    ElementoMostrarComponent
+    ElementoMostrarComponent,
+    ComprarComponent
   ],
   imports: [
     BrowserModule,
