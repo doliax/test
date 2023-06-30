@@ -14,6 +14,7 @@
 <span class="contador"> <i class="fas fa-shopping-cart"></i>{{number_puls}} elementos | Precio: {{precio}}</span> 
 
 <div class="cards-container" *ngIf="number_puls">
+    <button (click)="removePuls()">-</button>
     <button routerLink="/compra">Comprar</button>
 </div>
 

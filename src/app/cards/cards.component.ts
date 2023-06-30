@@ -9,6 +9,7 @@ export class CardsComponent implements OnInit {
 
   number_puls: number = 0;  
   precio: number = 0;
+  precios_articulos: number[] = [];
   public articulo: Articles = new Articles();
    articulo2: Articles = new Articles();
    articulo3: Articles = new Articles();
@@ -50,7 +51,25 @@ export class CardsComponent implements OnInit {
   //Esta función acumula el precio de cada artiuclo, se lo asignamos a la imagen
   acumularPrecio(precio_final: number) {
     this.precio += precio_final;
+    this.precios_articulos.push(precio_final);
   }
+
+  removePuls(){
+    //Comprobamos que haya elementos el el array, aunque siempre habrá por el tema de la comprobación del html
+    if (this.precios_articulos.length > 0) {
+      //Obtenemos el ultimo precio añadido
+      const ultimo_precio = this.precios_articulos[this.precios_articulos.length - 1];
+      // Restar el último precio añadido
+      this.precio -= ultimo_precio; 
+      // Luego lo eliminamos del array
+      this.precios_articulos.pop(); 
+      this.number_puls--;
+    }
+  }
+
+  /*decrecerPrecio(precio_final: number) {
+    this.precio -= precio_final;
+  }*/
 
   ngOnInit(): void {}
 
