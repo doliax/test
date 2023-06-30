@@ -1,3 +1,38 @@
-<form action="">
-    TEST
-</form>
+<div class="d-flex justify-content-center">
+    <form #myForm="ngForm" style="max-width: 400px;">
+      <div class="form-group mb-3">
+        <label for="nombre">Nombre:</label>
+        <input type="text" class="form-control" id="nombre" name="nombre" required minlength="3">
+      </div>
+  
+      <div class="form-group mb-3">
+        <label for="apellidos">Apellidos:</label>
+        <input type="text" class="form-control" id="apellidos" name="apellidos" required>
+      </div>
+  
+      <div class="form-group mb-3">
+        <label for="email">Email:</label>
+        <input type="email" class="form-control" id="email" name="email" required>
+      </div>
+  
+      <div class="form-group mb-3">
+        <label for="dir_env">Dirección Envio:</label>
+        <input class="form-control col-md-12" id="dir_env" name="dir_env" required>
+      </div>
+  
+      <div class="form-group mb-3">
+        <label for="tlf">Telefono:</label>
+        <input type="tel" class="form-control col-md-12" id="tlf" name="tlf" required>
+      </div>
+  
+      <div class="form-group mb-3">
+        <label for="mensaje">Mensaje:</label>
+        <textarea class="form-control" id="mensaje" name="mensaje"></textarea>
+      </div>
+  
+      <div class="form-group text-center">
+        <input type="submit" class="btn btn-primary" value="Enviar">
+      </div>
+    </form>
+  </div>
+  

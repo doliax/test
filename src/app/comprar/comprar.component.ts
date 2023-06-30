@@ -10,6 +10,9 @@ export class ComprarComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+   
   }
+
+
 
 }
