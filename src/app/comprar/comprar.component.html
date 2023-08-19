@@ -1,27 +1,28 @@
 <div class="d-flex justify-content-center">
     <form #myForm="ngForm" style="max-width: 400px;">
       <div class="form-group mb-3">
-        <label for="nombre">Nombre:</label>
-        <input type="text" class="form-control" id="nombre" name="nombre" required minlength="3">
+        <label for="nombre">Nombre:*</label>
+        <input type="text" class="form-control" id="nombre" name="nombre" [ngModel]="nombre" required minlength="3">
+        <!--<div *ngIf="nombre?.length === 0 || !nombre">El nombre es requerido.</div>-->
       </div>
   
       <div class="form-group mb-3">
-        <label for="apellidos">Apellidos:</label>
+        <label for="apellidos">Apellidos:*</label>
         <input type="text" class="form-control" id="apellidos" name="apellidos" required>
       </div>
   
       <div class="form-group mb-3">
-        <label for="email">Email:</label>
+        <label for="email">Email:*</label>
         <input type="email" class="form-control" id="email" name="email" required>
       </div>
   
       <div class="form-group mb-3">
-        <label for="dir_env">Dirección Envio:</label>
+        <label for="dir_env">Dirección Envio:*</label>
         <input class="form-control col-md-12" id="dir_env" name="dir_env" required>
       </div>
   
       <div class="form-group mb-3">
-        <label for="tlf">Telefono:</label>
+        <label for="tlf">Telefono:*</label>
         <input type="tel" class="form-control col-md-12" id="tlf" name="tlf" required>
       </div>
   
@@ -31,7 +32,7 @@
       </div>
   
       <div class="form-group text-center">
-        <input type="submit" class="btn btn-primary" value="Enviar">
+        <input type="submit" class="btn btn-primary" value="Enviar" (click)="comprobar()">
       </div>
     </form>
   </div>

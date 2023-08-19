@@ -1,12 +1,12 @@
 <form #form1="ngForm" class="form" action="submit" method="post">
     <div class="form-group">
         <label for="email">Email: *</label>
-        <input type="email" [(ngModel)]="data_formulario.email" name="email" id="email" required><br>
+        <input type="email" [(ngModel)]="data_formulario.email" name="email" id="email" required><br><br>
 
 
         <label for="empresa">Empresa</label>
         <input type="checkbox" [(ngModel)]="data_formulario.empresa" name="empresa" id="empresa" placeholder="empresa"><br>
-
+        
         <label *ngIf="data_formulario.empresa" for="nombre_empresa">Nombre de la empresa</label>
         <input *ngIf="data_formulario.empresa" type="text" [(ngModel)]="data_formulario.nombre_empresa" name="nombre_empresa" id="nombre_empresa"><br>
 
