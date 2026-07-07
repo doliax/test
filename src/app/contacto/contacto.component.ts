@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { DataForm } from '../class/data_form';
 
 @Component({
+  standalone: false,
   selector: 'app-contacto',
   templateUrl: './contacto.component.html',
   styleUrls: ['./contacto.component.css']

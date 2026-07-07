@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 @Component({
+  standalone: false,
   selector: 'app-elemento-add',
   templateUrl: './elemento-add.component.html',
   styleUrls: ['./elemento-add.component.css']
